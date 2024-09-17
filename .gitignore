@@ -1,6 +1,7 @@
 ### FinanceTracker ###
 backend/.idea
 backend/target/
+infrastructure/pgsql_db
 
 ### IntelliJ IDEA ###
 .idea/compiler.xml

@@ -1,0 +1,21 @@
+services:
+
+  postgres:
+    image: postgres
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: finance_tracker
+      POSTGRES_USER: finance
+      POSTGRES_PASSWORD: M)D#RNm3m0ry
+    volumes:
+      - ./pgsql_db:/var/lib/postgresql/data
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+    environment:
+      ADMINER_DEFAULT_SERVER: postgres
