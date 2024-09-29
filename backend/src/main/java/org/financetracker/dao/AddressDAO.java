@@ -17,12 +17,14 @@ public class AddressDAO {
             """;
 
     private static final String QUERY_SELECT = """
-            SELECT FROM public.address
+            SELECT id, country, city, street, building, stage, apartment, doorcode
+            FROM public.address
             WHERE id = ?;
             """;
 
     private static final String QUERY_SELECT_ALL = """
-            SELECT FROM public.address;
+            SELECT id, country, city, street, building, stage, apartment, doorcode
+            FROM public.address;
             """;
 
     private static final String QUERY_UPDATE = """
