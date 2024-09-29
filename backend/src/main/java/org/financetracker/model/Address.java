@@ -12,6 +12,16 @@ public class Address {
     private String apartment;
     private String doorcode;
 
+    public Address(String country, String city, String street, String building, String stage, String apartment, String doorcode) {
+        this.country = country;
+        this.city = city;
+        this.street = street;
+        this.building = building;
+        this.stage = stage;
+        this.apartment = apartment;
+        this.doorcode = doorcode;
+    }
+
     public Address(int id, String country, String city, String street, String building, String stage, String apartment, String doorcode) {
         this.id = id;
         this.country = country;
